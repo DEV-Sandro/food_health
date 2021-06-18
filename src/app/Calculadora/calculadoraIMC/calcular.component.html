@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            peso
+            <input type="number" [(ngModel)]="peso" class="from-control" step="0.010">
+        </div>
+        <div class="col">
+            altura
+            <input type="number" [(ngModel)]="altura" class="from-control" step="0.010">
+        </div>
+            <br>
+            <button type="button " name="button" (click)= "calcular()" class="btn btn-outkine-pimary">Calcular </button>
+        <div>
+
+    </div>
+
+
+ </div>
+ <h3 class="tex-center"> Resultado: <b>{{imc}}</b></h3>
+
+</div>
