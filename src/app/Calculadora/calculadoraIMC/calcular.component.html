@@ -1,21 +1,33 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            peso
+            Peso
             <input type="number" [(ngModel)]="peso" class="from-control" step="0.010">
         </div>
         <div class="col">
-            altura
+            Quadril
+            <input type="number" [(ngModel)]="quadril" class="from-control" step="0.010">
+        </div>
+        <div class="col">
+            Altura
             <input type="number" [(ngModel)]="altura" class="from-control" step="0.010">
         </div>
             <br>
-            <button type="button " name="button" (click)= "calcular()" class="btn btn-outkine-pimary">Calcular </button>
+            <button type="button " name="button" (click)= "calcular()" class="btn btn-outkine-pimary">Calcular IMC </button>
+            <button type="button " name="button" (click)= "calcular()" class="btn btn-outkine-pimary">Calcular IAC </button>
         <div>
 
     </div>
 
 
  </div>
- <h3 class="tex-center"> Resultado: <b>{{imc}}</b></h3>
+ <h3 class="tex-center"> Resultado IMC: <b>{{imc}}</b></h3>
+ <h4 class="tex-center"> Resultado IAC: <b>{{iac}}</b></h4>
+ <h5 class="tex-center">Se você está com problemas de excesso ou falta de peso, o ideal é consultar um médico.
+     Esse tipo de cálculo que pode ser feito em casa, como o IMC e o IAC mostram resultados de forma artificial.
+     Um médico irá usar outras ferramentas muito mais eficientes para calcular o seu peso e indicar o que é melhor para o seu caso.
+     Afinal, cada pessoa é diferente da outra, e métodos que generalizam nem sempre são totalmente corretos.
+
+</h5>
 
 </div>
