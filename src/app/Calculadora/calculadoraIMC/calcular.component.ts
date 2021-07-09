@@ -13,6 +13,7 @@ export class CalcularComponent{
     altura!: number;
     imc!: number;
     quadril! : number;
+    iac!: number;
 
     constructor(){
     }
@@ -27,5 +28,16 @@ export class CalcularComponent{
         this.imc = pes /(alt**2)
     
         return 2
+    }
+    calcular2(): number{
+
+        let iac =0;
+        let alt = this.altura;
+        let pes = this.peso;
+        let qua = this.quadril;
+
+        this.iac = qua /(alt**2)-18
+    
+        return 3
     }
 }
